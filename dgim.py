@@ -24,9 +24,9 @@ class DGIM:
                 if len(self.container[i])<=2:
                     break
                 else:
-                        self.container[i+1].append(self.container[i][1])
-                        self.container[i]=self.container[i][-1:]
-                        self.current_max=max(i+1,self.current_max)
+                    self.container[i+1].append(self.container[i][1])
+                    self.container[i]=self.container[i][-1:]
+                    self.current_max=max(i+1,self.current_max)
 
     def query(self, interval):
         assert self.current_timestamp>=0 and interval <= self.window and interval>=1
